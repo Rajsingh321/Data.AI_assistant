@@ -17,7 +17,7 @@ genai = google.generativeai.configure(api_key = "AIzaSyDehY_9LRvcCxiPoccqm9jvAzR
 def assistantagent(system_prompt, user_prompt):
     prompt = f"{system_prompt}\n\n{user_prompt}"
     time.sleep(5)
-    response = genai.GenerativeModel("gemini-2.0-flash").generate_content(prompt)
+    response = genai.GenerativeModel("gemini-1.5-flash").generate_content(prompt)
     return response.text.strip().replace("```python", "").replace("```", "").strip()
 def chat_agent(message):
     system_prompt = """Introduction
