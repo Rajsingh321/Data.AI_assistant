@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import io
 import time
-import google.generativeai 
+import google.generativeai as genai
 import streamlit.components.v1 as components
 
 
