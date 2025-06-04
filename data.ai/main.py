@@ -12,7 +12,7 @@ common_user_inputs = ["hi", "hello", "hey", "howdy", "greetings", "good morning"
 
 
 # Gemini Client Setup
-genai = google.generativeai.configure(api_key=st.secrets["GEMINI_API_KEY"])  # Replace with your real Gemini API key
+genai = google.generativeai.configure(api_key = "AIzaSyDehY_9LRvcCxiPoccqm9jvAzRqj6_5ftA")  # Replace with your real Gemini API key
 # --- Gemini Interaction ---
 def assistantagent(system_prompt, user_prompt):
     prompt = f"{system_prompt}\n\n{user_prompt}"
